@@ -108,7 +108,7 @@ WHERE DEPT_ID = 'SYS';
 -- 사원명이 홍길동인 사원을 별칭으로 조회??? ::: WHERE 조건절에서 별칭을 컬럼명으로 사용X 
 SELECT EMP_ID AS '사원번호', EMP_NAME AS '사원명', ENG_NAME, GENDER, HIRE_DATE, SALARY 
 FROM EMPLOYEE
-WHERE  사원명 = '홍길동';
+WHERE '사원명' = '홍길동';
 
 -- 전략기획(STG) 부서의 모든 사원들의 사번, 사원명, 입사일, 급여를 조회
 SELECT * FROM DEPARTMENT;
@@ -1981,7 +1981,5 @@ end $$
 delimiter ;
 desc  salary_log;
 
-
-
-
+	
 
